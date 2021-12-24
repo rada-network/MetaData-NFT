@@ -1,0 +1,2 @@
+[Tue Dec 21 12:03:56.107432 2021] [php7:error] [pid 19] [client 172.17.0.1:59262] script '/var/www/html/index.php' not found or unable to stat
+[Tue Dec 21 12:03:57.771710 2021] [php7:error] [pid 19] [client 172.17.0.1:59262] script '/var/www/html/index.php' not found or unable to stat

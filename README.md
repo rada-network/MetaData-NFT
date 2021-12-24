@@ -1,1 +1,1 @@
-# MetaData-NFT
+docker compose up

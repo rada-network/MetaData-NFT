@@ -1,0 +1,14 @@
+
+RewriteEngine on
+
+DirectoryIndex index.php index.html
+ServerSignature Off
+
+Options -Indexes
+
+ErrorDocument 404 /index.html
+RewriteRule ^box/v1/0/?$ box/v1/default.php [L] [OR]
+RewriteRule ^box/v1/([0-9]+)/?$ box/v1/index.php?tokenId=$1&%{QUERY_STRING} [L] [OR]
+RewriteRule ^prl/v1/0/?$ prl/v1/default.php [L] [OR]
+RewriteRule ^prl/v1/([0-9]+)/?$ prl/v1/index.php?tokenId=$1&%{QUERY_STRING} [L] [OR]
+RewriteRule ^v1/([0-9]+)/?$ v1/index.php?tokenId=$1&%{QUERY_STRING} [L] [OR]
