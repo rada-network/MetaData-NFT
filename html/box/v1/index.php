@@ -14,7 +14,7 @@ if (!in_array($tokenId, $rangeToken)) {
 $tokenData = array(
   "name" => "Mystery Box",
   "description" => "How Might We?",
-  "image" => "https://nft.1alo.com/images/v1/box/mystery_box.jpg",
+  "image" => "https://nft.1alo.com/images/v1/box/mystery_box.png",
   "tokenId" => intval($tokenId)
 );
 

@@ -19,14 +19,14 @@ $nftJackpot = range(100091, 100100);
 $type = 0;
 $name = "Gold Ticket";
 $des = "Gold in your hand";
-$img = "https://nft.1alo.com/images/v1/prl/gold.jpg";
+$img = "https://nft.1alo.com/images/v1/prl/gold.png";
 if (in_array($tokenId, $nftDiamond)) {
-    $img = "https://nft.1alo.com/images/v1/prl/diamond.jpg";
+    $img = "https://nft.1alo.com/images/v1/prl/diamond.png";
     $type = 1;
     $name = "Diamond Ticket";
     $des = "Diamond in your hand";
 } elseif (in_array($tokenId, $nftJackpot)) {
-    $img = "https://nft.1alo.com/images/v1/prl/jackpot.jpg";
+    $img = "https://nft.1alo.com/images/v1/prl/jackpot.png";
     $type = 2;
     $name = "Jackpot Ticket";
     $des = "Money in your hand";
