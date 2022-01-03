@@ -6,12 +6,13 @@ header('Access-Control-Allow-Methods: GET');
 
 $tokenId = $_GET['tokenId'];
 
-$rangeToken = range(10001, 10200);
+$rangeToken = range(10, 21000);
 
 if (!in_array($tokenId, $rangeToken)) {
     header("Location: /");
 }
-
+$nftBoxTest = range(10, 1000);
+$nftTicketTest = range(20001, 21000);
 $nftBox = range(10001, 10100);
 $nftDiamond = range(10101, 10110);
 $nftGold = range(10111, 10190);
@@ -41,7 +42,18 @@ if (in_array($tokenId, $nftDiamond)) {
     $name = "Mystery Box";
     $des = "How Might We?";
     $img = "https://nft.1alo.com/images/v1/rada/mystery_box.png";
+} elseif (in_array($tokenId, $nftBoxTest)) {
+    $type = 5;
+    $name = "Mystery Box";
+    $des = "How Might We?";
+    $img = "https://nft.1alo.com/images/v1/rada/mystery_box.png";
+} elseif (in_array($tokenId, $nftTicketTest)) {
+    $type = 6;
+    $name = "Gold Ticket";
+    $des = "Gold in your hand";
+    $img = "https://nft.1alo.com/images/v1/rada/gold.png";
 }
+
 
 $tokenData = array(
     "name" => $name,
